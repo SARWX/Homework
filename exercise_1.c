@@ -27,7 +27,7 @@ void main() {
     printf("Введите число в десятичной системе (не более 32 бит):\n");
     scanf("%ld", &x);
 
-    if (llabs(x) > MAXUINT_32)
+    if (llabs(x) > (MAXINT_32-1))
         printf("Произошло переполнение\n");
     
     else {
